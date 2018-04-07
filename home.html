@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet">
-
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"> </script>
 
   </head>
   <body>
@@ -28,7 +28,7 @@
       </div>
       <nav class="main-nav">
         <ul>
-          <li class="active"> <i class="fas fa-home"></i> <a class="on" href="home.html"> Dashboard </a></li>
+          <li class="nav-active"> <i class="fas fa-home"></i> <a class="on" href="home.html"> Dashboard </a></li>
           <li> <i class="far fa-chart-bar"></i> <a href="analytics.html"> Analytics </a></li>
           <li> <i class="far fa-sticky-note"></i> <a href="post.html"> Posts </a></li>
           <li> <i class="far fa-envelope"></i> <a href="inbox.html"> Inbox </a></li>
@@ -44,6 +44,26 @@
       </nav>
       <img id="logo" src="images/logo-large.png" alt="Maslow logo">
     </section>
+    <main>
+      <section id="new-post" class="top-card card">
+        <ul>
+          <li><div class="user-profile-image ann"></div> <p class="username"> <i class="fab fa-instagram"></i>  karlala</p>  </li>
+          <li><div class="user-profile-image ann"></div> <p class="username"> <i class="fab fa-twitter"></i> karlala</p>    </li>
+          <li><div class="user-profile-image ann"></div> <p class="username"> <i class="fab fa-facebook-f"></i>  karlala</p></li>
+          <li class="inactive-network"><div class="user-profile-image ann"></div> <p class="username"> <i class="fab fa-linkedin-in"></i> karlala</p></li>
+          <li> <a> <button class="customize-network " type="button" > Customize for each network </button> </a></li>
 
+        </ul>
+      </section>
+
+      <section class="full-width card">
+
+        <section>
+          <p>info </p>
+
+        </section>
+      </section>
+    </main>
+      <script src="scripts.js"></script>
   </body>
 </html>
