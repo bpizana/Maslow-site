@@ -1,0 +1,186 @@
+
+body{
+  background-color: #1D212C;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  letter-spacing: .4px;
+  color:#949EB3;
+}
+
+a{
+  text-decoration: none;
+  color: #949EB3;
+}
+
+
+/******** Sidebar ****************/
+/******* Side bar - main nav  from top to bottom**********/
+/**************************************/
+
+  /*.sidebar{
+    position: fixed;
+      left:0;
+      top:0;
+      bottom:0;
+    width:60px;
+    overflow-x: hidden;
+      transition: 0.5s;
+  }*/
+
+  .sidebar/*:hover*/{
+    position: fixed;
+      left:0;
+      top:0;
+      bottom:0;
+    width:200px;
+    overflow-x: hidden;
+      transition: 0.5s;
+  }
+
+  .card,.sidebar{
+    background-color:#222632;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.22);
+  }
+
+  .profile-info{
+    margin: 20px 20px -10px 10px;
+    display: inline-flex;
+  }
+
+  .name-company{
+    margin-top: 9px;
+  }
+
+  #name{
+    color:white;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 2px;
+  }
+  #company{
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 12px;
+      padding: 2px;
+  }
+
+  /********** Profile images ************/
+
+  .user-profile-image{
+    width:48px;
+    height: 48px;
+    /*display: inline-flex;*/
+    /*float: left;*/
+    margin:0px 20px 20px 0;
+  }
+
+
+  /* images */
+    .ann{
+      background-image: url("../images/ann.jpg");
+      background-size: cover;
+      border: 1px solid rgba(30,33,39,0.82);
+      border-radius: 50%;
+    }
+    .jon{
+      background-image: url("../images/jon.jpg");
+      background-size: cover;
+      border: 1px solid rgba(30,33,39,0.82);
+      border-radius: 50%;
+    }
+
+
+  /********** Nav ***************/
+
+  .main-nav{
+    font-weight: 400;
+    font-size: 16px;
+    color: #949EB3;
+    letter-spacing: 1.17px;
+    text-align: left;
+    border-bottom: 1px solid #1B2029;
+  }
+  .main-nav ul{
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+  }
+  .main-nav li{
+    padding:15px 0 15px 20px;
+    width:90%;
+  }
+
+    .main-nav li:hover{
+      background-image: linear-gradient(-135deg, rgba(113, 125, 148, 0.5) 0%, rgba(68, 79, 101, 0.5) 100%);
+    }
+
+  .main-nav a{
+    margin-left: 10px;
+  }
+
+  i{
+    margin-right: 10px;
+  }
+
+  .active{
+    background-image: linear-gradient(40deg, #7C75FF 0%, #02D4FF 100%);
+    color:white;
+  }
+  .on{
+    color:white;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  #logo{
+    position: fixed;
+    bottom: 50px;
+    left:30px;
+  }
+
+
+
+/****************************************/
+/****************************************/
+/****************************************/
+
+
+/****************************************/
+/****************************************/
+/****************************************/
+
+
+
+
+
+/****************************************/
+/****************************************/
+/****************************************/
+
+
+
+
+/****************************************/
+/****************************************/
+/****************************************/
+
+
+
+
+/****************************************/
+/****************************************/
+/****************************************/
+
+
+
+
+/****************************************/
+/****************************************/
+/****************************************/
+
+
+
+
+/****************************************/
+/****************************************/
+/****************************************/
