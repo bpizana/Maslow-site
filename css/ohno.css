@@ -1,0 +1,56 @@
+
+
+
+h2{
+  font-weight: 700;
+font-size: 35px;
+color: #FFFFFF;
+text-align: center;
+margin: 20px 0;
+}
+
+.ohno{
+  margin-top: 50px;
+}
+
+.plan-name{
+  font-size: 30px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin: 20px 0;
+}
+.plan-list{
+    margin: 30px 30px 30px 30px;
+    font-size: 20px;
+}
+.plan-list li{
+  margin:10px 0;
+}
+.try{
+  font-size: 22px;
+  color: #949EB3;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.plan button{
+  display: block;
+  margin:0 auto;
+}
+.plan{
+  margin-bottom: 30px;
+}
+
+.active{
+  background-image: linear-gradient(40deg, #7C75FF 0%, #02D4FF 100%);
+  color:white;
+  outline: none;
+}
+
+main{
+  background-image: url('../images/dessert2.png');
+  background-position:bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 200px;
+}

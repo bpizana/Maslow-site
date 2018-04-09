@@ -170,12 +170,36 @@ h1{
     font-weight: 700;
   }
 
+
   #logo{
     position: fixed;
     bottom: 50px;
     left:30px;
   }
 
+  .sidebar-dropdown{
+    padding-left: 10px;
+    background-color:#1B2029;
+    position: relative;
+    top:-14px;
+  }
+
+  .sidebar-dropdown li{
+    font-size: 13px;
+  }
+.main-nav ul ul.sidebar-dropdown{
+  margin-bottom: 0;
+}
+
+.top-nav{
+  height:50px;
+ background-image: linear-gradient(-135deg, #21252C 0%, #444F65 100%);
+ text-align: center;
+}
+.top-nav a{
+  margin:0 15px;
+  line-height: 50px;
+}
 
 
 
@@ -189,12 +213,17 @@ main{
     left:12%;
   width:88%;
 }
-.top-card-top, .top-half-left, .top-half-right{
+
+.very-top-card{
+  position: relative;
+  z-index: 10;
+}
+.top-card-top, .top-half-left, .top-half-right,.top-card,.top-half{
   position: relative;
   padding: 20px 30px;
-  z-index: 4;
+  z-index: 5;
 }
-.full-width, .half-left,.half-right{
+.full-width, .half-left,.half-right,.half-center{
   position: relative;
   padding: 30px;
   z-index: 0;
@@ -204,32 +233,111 @@ main{
   width:49.8%;
   display: inline-block;
   vertical-align: top;
+}
+
+.three-quarter{
+  width:75%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.three-quarter .three-quarter{
+  padding:30px;
+}
+
+.half-center{
+  margin:0 25px 25px 25px;
 
 }
 
+
 .top-card-top{
   margin: 50px 50px 0 50px;
+}
+.top-card{
+  margin: 25px 50px 0 50px;
 }
 
 .full-width{
   margin:0 50px 25px 50px;
 }
 
+.bottom{
+  margin-bottom: 50px;
+}
+.top-half{
+  margin: 25px 25px 0 25px;
+}
+
 .top-half-left{
   margin: 25px 25px 0 50px;
 }
 .half-left{
-  margin:0 25px 25px 50px;
+  margin:0 25px 50px 50px;
 }
 
 .top-half-right{
   margin: 25px 50px 0 25px;
 }
-.half-right{
-  margin:0 50px 25px 25px;
+
+.top-half-right-overlap-1{
+  margin: 0px 50px 50px 25px;
+    position: relative;
+    padding: 20px 30px;
+    z-index: 3;
 }
 
+.top-half-right-overlap-2{
+  margin: 0px 50px 0 25px;
+    position: relative;
+    padding: 20px 30px;
+    z-index: 2;
+}
 
+.top-half-right-overlap-3{
+  margin: 0px 50px 0 25px;
+    position: relative;
+    padding: 20px 30px;
+    z-index: 1;
+
+}
+
+.top-half-left-overlap-1{
+  margin: 0px 25px 0 50px;
+    position: relative;
+    padding: 20px 30px;
+    z-index: 3;
+}
+
+.top-half-left-overlap-2{
+  margin: 0px 25px 0 50px;
+    position: relative;
+    padding: 20px 30px;
+    z-index: 2;
+}
+
+.top-half-left-overlap-3{
+  margin: 0px 25px 0 50px;
+    position: relative;
+    padding: 20px 30px;
+    z-index: 1;
+
+}
+
+.half-right{
+  margin:0 50px 50px 25px;
+}
+
+.bottom-small{
+  margin: 0 0 25px 50px;
+  width: 50%;
+  padding: 30px;
+}
+.bottom-small-right{
+  margin: 0 0px 25px 0px;
+  width: 50%;
+  padding: 30px;
+}
 
 
 /****************************************/
@@ -286,7 +394,7 @@ button{
   color: #949EB3;
   text-align: center;
   padding:15px 20px;
-  display: inline-flex;
+  display: inline-flex
 }
 
 .customize-network{
@@ -343,6 +451,7 @@ textarea::placeholder{
 .button{
   background-color: #222632;
   border-image: linear-gradient(-135deg, #717D94 0%, #444F65 100%) 3 / 3px;
+
 }
 
 
@@ -360,6 +469,7 @@ textarea::placeholder{
 .dropdown {
     position: relative;
     display: inline-block;
+
 }
 
 .dropdown-content {
@@ -387,7 +497,6 @@ textarea::placeholder{
 }
 
 
-
 /****************************************/
 /****************************************/
 /****************************************/
@@ -398,6 +507,7 @@ textarea::placeholder{
 
 .left-small{
   margin-left: 50px;
+  margin-bottom: 25px;
 
   background: #222632;
   box-shadow: 0 0 44px 0 rgba(0,0,0,0.23);
@@ -409,11 +519,7 @@ textarea::placeholder{
 }
 
 .right-small{
-  /*float:right;*/
-  /*width: 39.7%;*/
   height: 150px;
-  /*display: block;*/
-  position: relative;
   background: #222632;
   box-shadow: 0 0 44px 0 rgba(0,0,0,0.23);
 }
@@ -422,6 +528,7 @@ textarea::placeholder{
   width:49%;
   display: inline-block;
 }
+
 
 .overlap{
   display:flex;
@@ -445,6 +552,9 @@ textarea::placeholder{
   text-align: center;
 }
 
+.center-img{
+  margin-left: 50%;
+}
 .uppercase{
   text-transform: uppercase;
 }
@@ -463,7 +573,9 @@ textarea::placeholder{
 .green{
   color:#6FE881;
 }
-
+.grey{
+  color:#C5C6CD;
+}
 
 .user-info{
   margin: 20px 0;
@@ -528,6 +640,43 @@ strong{
   overflow: scroll;
 }
 
+.full{
+  margin:0 50px 25px 50px;
+  /*position: relative;
+  z-index: 0;*/
+  display: flex;
+}
+.one-third-left{
+  width:33%;
+  margin: 0 0px;
+  position: relative;
+    z-index: 1;
+  display: inline-block;
+  padding-left: 30px;
+}
+.one-third-center{
+  width:35%;
+  margin: 0 0px;
+  position: relative;
+
+    z-index: 2;
+  display: inline-block;
+  padding-left: 30px;
+
+}
+.one-third-right{
+  width:32%;
+  margin: 0 0px;
+  position: relative;
+
+    z-index: 1;
+  display: inline-block;
+  padding-left: 30px;
+
+}
+
+
+
 /****************************************/
 /**************** charts ************************/
 /****************************************/
@@ -591,19 +740,172 @@ strong{
 }
 
 /****************************************/
-/****************************************/
-/****************************************/
-
-
-
-
-/****************************************/
-/****************************************/
+/*************  analytics **************/
 /****************************************/
 
+.small-full-half{
+  width:100%;
+  margin:0 25px 0 50px;
+}
+
+.donut-chart {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.slice {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .chart-center {
+    position: absolute;
+    border-radius: 50%;
+  }
+  span {
+    display: block;
+    text-align: center;
+  }
+
+  .donut-chart.chart3 {
+  width: 120px;
+  height: 120px;
+  background: #444A59;
+  margin: 0 auto;
+}
+.donut-chart.chart3 .slice.one {
+  clip: rect(0 120px 60px 0);
+  -webkit-transform: rotate(144deg);
+  transform: rotate(144deg);
+  background-image: linear-gradient(62deg, #F47072 0%, #FE9E73 100%);
+}
+.donut-chart.chart3 .slice.two {
+  clip: rect(0 60px 120px 0);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  background-image: linear-gradient(62deg, #F47072 0%, #FE9E73 100%);
+}
+.donut-chart.chart3 .chart-center {
+  top: 5px;
+  left: 5px;
+  width: 110px;
+  height: 110px;
+  background: #222632;
+}
+.donut-chart.chart3 .chart-center span {
+  font-size: 40px;
+  line-height: 110px;
+  color: #353535;
+}
+
+.space-top{
+  margin-top: 10px;
+}
 
 
+#enguage{
+  box-sizing: border-box;
+  width: 99%;
+}
 
+/****************************************/
+/****************************************/
+/****************************************/
+
+
+.chart-views {
+  height: 14vh;
+  width: 36vw;
+
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-rows: repeat(100, 1fr);
+  border-left: 1px solid #445065;
+  border-bottom: 1px solid #445065;
+  grid-column-gap: 20px;
+}
+
+.chart-labels {
+  height: 10vh;
+  width: 36vw;
+
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(100, 1fr);
+
+  grid-column-gap: 30px;
+  text-align: center;
+  padding-top: 10px;
+  text-transform: capitalize;
+}
+
+[class*="grid-bar"] {
+  grid-row-start: 1;
+  grid-row-end: 101;
+}
+.grid-bar-1 {
+  grid-row-start: 50;
+}
+.grid-bar-2 {
+  grid-row-start: 30;
+}.grid-bar-3 {
+  grid-row-start: 0;
+
+}.grid-bar-4 {
+  grid-row-start: 60;
+
+}.grid-bar-5 {
+  grid-row-start: 100;
+
+}.grid-bar-6 {
+  grid-row-start: 30;
+
+}.grid-bar-7 {
+  grid-row-start: 10;
+}
+
+.grid-selected{
+  background-image: linear-gradient(45deg, #EC4F4F 0%, #FE9E73 100%);
+}
+.grid-deselected{
+  background-image: linear-gradient(-135deg, #717D94 0%, #444F65 100%);
+}
+
+
+.insight{
+  font-size: 23px;
+  line-height: 35px;
+  letter-spacing: 1px;
+}
+
+.summary{
+  display: inline-block;
+  margin-left: 15%;
+}
+.summary-content{
+  display: inline-flex;
+}
+
+.summary-content .profile-info{
+  margin: 0px;
+}
+.summary-content .fist{
+  margin-left: 0;
+}
+.summary-content .last{
+  margin-right: 0px;
+}
+.summary-content li{
+  margin: 20px 40px;
+  height:30px;
+}
+
+.lfrc{
+  position: relative;
+  top:15px;
+}
 /****************************************/
 /****************************************/
 /****************************************/

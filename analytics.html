@@ -1,0 +1,252 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Malsow-analytics</title>
+    <!-- icons -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/solid.js" integrity="sha384-P4tSluxIpPk9wNy8WSD8wJDvA8YZIkC6AQ+BfAFLXcUZIPQGu4Ifv4Kqq+i2XzrM" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/regular.js" integrity="sha384-BazKgf1FxrIbS1eyw7mhcLSSSD1IOsynTzzleWArWaBKoA8jItTB5QR+40+4tJT1" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/brands.js" integrity="sha384-qJKAzpOXfvmSjzbmsEtlYziSrpVjh5ROPNqb8UZ60myWy7rjTObnarseSKotmJIx" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/fontawesome.js" integrity="sha384-2IUdwouOFWauLdwTuAyHeMMRFfeyy4vqYNjodih+28v2ReC+8j+sLF9cK339k5hY" crossorigin="anonymous"></script>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/analytics.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"> </script>
+
+  </head>
+  <body>
+    <section class="sidebar">
+      <div class="profile-info">
+        <div class="user-profile-image ann"></div>
+        <div class="name-company">
+          <p id="name">Karla Jones</p>
+          <p id="company"> THE RIGHT CO.</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li> <i class="fas fa-home"></i> <a href="home.html"> Dashboard </a></li>
+          <li class="nav-active"> <i class="far fa-chart-bar"></i> <a class="on"href="analytics.html"> Analytics </a></li>
+            <ul class="sidebar-dropdown">
+              <li class="bright-blue"><i class="fas fa-chart-pie"></i> <a class="bright-blue uppercase" href="analytics.html"> overview </a></li>
+              <li><i class="fas fa-home"></i> <a href="usersandposts.html"> users &amp posts </a></li>
+              <li><i class="fas fa-home"></i> <a href="ohno.html"> campaigns </a></li>
+              <li><i class="fas fa-home"></i> <a href="ohno.html"> google analytics </a></li>
+            </ul>
+          <li> <i class="far fa-sticky-note"></i> <a href="post.html"> Posts </a></li>
+          <li> <i class="far fa-envelope"></i> <a href="inbox.html"> Inbox </a></li>
+          <li> <i class="far fa-newspaper"></i> <a href="feeds.html"> Feeds </a></li>
+          <li> <i class="far fa-list-alt"></i> <a href="ohno.html"> Campaigns </a></li>
+        </ul>
+      </nav>
+      <nav class="main-nav">
+        <ul>
+          <li><i class="far fa-edit"></i><a> New Post </a></li>
+          <li><i class="far fa-sun"></i> <a href="settings.html"> Settings </a></li>
+        </ul>
+      </nav>
+      <img id="logo" src="images/logo-large.png" alt="Maslow logo">
+    </section>
+    <main>
+      <nav class="top-nav">
+        <a class="bright-blue" href="">All Networks</a>
+        <a href="">Instagram</a>
+        <a href="">Facebook</a>
+        <a href="">Linkedin</a>
+        <a href="">Twitter</a>
+      </nav>
+
+      <section class="top-card-top card">
+        <h1>Enguagement</h1>
+
+      </section>
+      <section class="full-width card">
+        <img id="enguage" src="images/enguage.png" alt="">
+      </section>
+
+      <section class="half">
+        <section class="top-half-left card">
+          <h1>Views sice last week</h1>
+        </section>
+        <section class="top-half-left-overlap-1 card center">
+          <img src="images/graph.png" alt="">
+        </section>
+        <div class="overlap">
+          <div class="bottom-small card">
+            <div class="donut-chart chart3">
+              <div class="slice one"></div>
+              <div class="slice two"></div>
+              <div class="chart-center">
+                <span><p class="pink">50%</p></span>
+              </div>
+            </div>
+            <p class="center space-top"> Increase in followers</p>
+            <p class="center space-top"> 5% more to reach goal</p>
+
+          </div>
+          <div class="bottom-small-right card">
+            <div class="donut-chart chart3">
+              <div class="slice one"></div>
+              <div class="slice two"></div>
+              <div class="chart-center">
+                <span><p class="grey">501</p></span>
+              </div>
+            </div>
+            <p class="center space-top"> followers last week</p>
+          </div>
+
+        </div>
+        <section class="top-half-left card">
+          <h1>Insight</h1>
+        </section>
+        <section class="half-left card">
+          <p class="insight">Your followers are more active between 7-8pm. Try changing yout post times to get more likes and follows</p>
+        </section>
+      </section>
+
+      <section class="half">
+        <section class="top-half-right card">
+          <h1>last week vs. this week</h1>
+        </section>
+        <section class="half-right center bottom card">
+          <img  src="images/pentagraph.png" alt="">
+        </section>
+        <section class="top-half-right card">
+          <h1>Follower Growth</h1>
+        </section>
+        <section class="half-right center card">
+          <img src="images/followergrowth.png" alt="">
+        </section>
+      </section>
+
+      <section class="top-card card">
+        <h1>Top Posts</h1>
+      </section>
+      <section class="full">
+        <section class="one-third-left card">
+          <div class="user-info">
+            <div class="user-profile-image ann"></div>
+            <div class="name-postinfo">
+              <p class="name"> <i class="fab fa-twitter"></i> @Karlala</p>
+              <p class="scheduled"> Scheduled for Monday Mar 13th at 2:00pm</p>
+            </div>
+            <div class="post">
+              <p>The World is full of people telling others what to do. Live your life as best you can. If it inspires others they will follow.<br><br>#ThursdayThought #Motivation #Believe #Inspiration #Gratitude </p>
+              <img class="post-image" src="images/post-image.png" alt="">
+              <img class="post-image" src="images/post-image-1.png" alt="">
+            </div>
+          </div>
+        </section>
+        <section class="one-third-center card">
+          <div class="user-info">
+            <div class="user-profile-image ann"></div>
+            <div class="name-postinfo">
+              <p class="name"> <i class="fab fa-twitter"></i> @Karlala</p>
+              <p class="scheduled"> Scheduled for Monday Mar 13th at 2:00pm</p>
+            </div>
+            <div class="post">
+              <p>Being Happy or Sad is largely <br> a Decision we Make. </p>
+            </div>
+          </div>
+          </section>
+        <section class="one-third-right card">
+          <div class="user-info">
+            <div class="user-profile-image ann"></div>
+            <div class="name-postinfo">
+              <p class="name"> <i class="fab fa-twitter"></i> @Karlala</p>
+              <p class="scheduled"> Scheduled for Monday Mar 13th at 2:00pm</p>
+            </div>
+            <div class="post">
+              <p><strong>soulbabetribeWhere</strong> all my Aries Queens at? 👑 #mybdayistimorrow #turnup @unicorncurves.</p>
+              <img class="one-post-image" src="images/post-image-2.png" alt="">
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="top-card card">
+        <h1>Summary</h1>
+      </section>
+      <section class="full-width card">
+        <ul class="summary">
+          <li>
+            <ul class="summary-content">
+              <li class="first">
+                <div class="profile-info">
+                  <div class="user-profile-image ann"></div>
+                  <div class="name-company">
+                    <p id="name">@Karlala</p>
+                    <p id="company"> Instagram </p>
+                  </div>
+                </div>
+              </li>
+              <li class="lfrc"> 50 likes</li>
+              <li class="lfrc"> 300 followers </li>
+              <li class="lfrc"> 10 reposts </li>
+              <li class="last lfrc"> 200 comments </li>
+            </ul>
+          </li>
+          <li>
+            <ul class="summary-content">
+              <li class="first">
+                <div class="profile-info">
+                  <div class="user-profile-image ann"></div>
+                  <div class="name-company">
+                    <p id="name">Karla Jones</p>
+                    <p id="company"> Linkedin </p>
+                  </div>
+                </div>
+              </li>
+              <li class="lfrc"> 50 likes</li>
+              <li class="lfrc"> 300 followers </li>
+              <li class="lfrc"> 10 reposts </li>
+              <li class="last lfrc"> 200 comments </li>
+            </ul>
+          </li>
+          <li>
+            <ul class="summary-content">
+              <li class="first">
+                <div class="profile-info">
+                  <div class="user-profile-image ann"></div>
+                  <div class="name-company">
+                    <p id="name">Karla Jones</p>
+                    <p id="company"> facebook </p>
+                  </div>
+                </div>
+              </li>
+              <li class="lfrc"> 50 likes</li>
+              <li class="lfrc"> 300 followers </li>
+              <li class="lfrc"> 10 reposts </li>
+              <li class="last lfrc"> 200 comments </li>
+            </ul>
+          </li>
+          <li>
+            <ul class="summary-content">
+              <li class="first">
+                <div class="profile-info">
+                  <div class="user-profile-image ann"></div>
+                  <div class="name-company">
+                    <p id="name">@Karlala</p>
+                    <p id="company"> twitter </p>
+                  </div>
+                </div>
+              </li>
+              <li class="lfrc"> 50 likes</li>
+              <li class="lfrc"> 300 followers </li>
+              <li class="lfrc"> 10 reposts </li>
+              <li class="last lfrc"> 200 comments </li>
+            </ul>
+          </li>
+
+        </ul>
+
+      </section>
+
+    </main>
+      <script src="scripts.js"></script>
+  </body>
+</html>
