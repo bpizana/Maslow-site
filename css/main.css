@@ -280,24 +280,24 @@ main{
   margin: 25px 50px 0 25px;
 }
 
-.top-half-right-overlap-1{
-  margin: 0px 50px 50px 25px;
+.half-right-overlap-1{
+  margin: 0px 50px 0px 25px;
     position: relative;
-    padding: 20px 30px;
+    padding: 30px ;
     z-index: 3;
 }
 
-.top-half-right-overlap-2{
+.half-right-overlap-2{
   margin: 0px 50px 0 25px;
     position: relative;
-    padding: 20px 30px;
+    padding:  30px;
     z-index: 2;
 }
 
-.top-half-right-overlap-3{
-  margin: 0px 50px 0 25px;
+.half-right-overlap-3{
+  margin: 0px 50px 25px 25px;
     position: relative;
-    padding: 20px 30px;
+    padding: 30px;
     z-index: 1;
 
 }
@@ -907,5 +907,34 @@ strong{
   top:15px;
 }
 /****************************************/
+/****************  posts pages   ************************/
 /****************************************/
-/****************************************/
+
+
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns:  repeat(5, 18%);
+  text-align: center;
+  grid-gap: 10px;
+}
+
+.box {
+  color: #949EB3;
+  padding: 0px;
+}
+
+.day{
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.time{
+  margin: 10px 0;
+}
+
+.e{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/down.png);}
