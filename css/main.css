@@ -26,6 +26,44 @@ h1{
   text-align: center;
 }
 
+
+
+
+/*::-webkit-scrollbar-button       {display: none;}
+::-webkit-scrollbar-track        { display: none;}
+::-webkit-scrollbar-track-piece  { display: none;}
+::-webkit-scrollbar-corner       { display: none;}
+::-webkit-resizer                { display: none}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}*/
+
+::-webkit-scrollbar {
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
 /******** Sidebar ****************/
 /******* Side bar - main nav  from top to bottom**********/
 /**************************************/
@@ -40,6 +78,8 @@ h1{
       transition: 0.5s;
   }*/
 
+
+
   .sidebar/*:hover*/{
     display: inline-block;
     position: fixed;
@@ -49,6 +89,7 @@ h1{
     width:200px;
     overflow-x: hidden;
       transition: 0.5s;
+      z-index: 100;
   }
 
   .card,.sidebar{
