@@ -564,8 +564,14 @@ textarea::placeholder{
 .pink{
   color: #FE7373;
 }
+.bgpink{
+  background-color: #FE7373;
+}
 .blue{
   color:#4BB2FF;
+}
+.bgblue{
+  background-color: #4BB2FF;
 }
 .bright-blue{
   color:#02D4FF;
@@ -1116,6 +1122,8 @@ line-height: 400px;
   padding: 0px;
   font-size: 18px;
   border: 1px solid #1B2029;
+  padding-right: 15px;
+  overflow:hidden;
 }
 
 .cal {
@@ -1136,8 +1144,47 @@ line-height: 400px;
   height:30px;
   text-align: center;
   line-height: 30px;
+  margin-bottom: 5px;
 }
 
 .weekday.selected{
 
+}
+.black{
+  background-color: #1B2029;
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+  margin-left: 20px;
+}
+
+.weekday.sun.2{
+  display: grid;
+    grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+}
+
+.weekday .post-snip{
+  max-height:40%;
+  width: 70%;
+  font-size: 15px;
+  margin:5px;
+  display: inline-flex;
+}
+
+.weekday img{
+  width: 48%;
+  margin: 0
+}
+
+.imgs{
+  margin-left:30px;
+}
+
+.circle{
+  width:8px;
+  height:8px;
+  border-radius: 100%;
+  margin:7px;
+  display: inline-flex;
 }
