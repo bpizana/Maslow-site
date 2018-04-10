@@ -640,6 +640,11 @@ strong{
   overflow: scroll;
 }
 
+.fixed-height-sm{
+  height: 500px;
+  overflow: scroll;
+}
+
 .full{
   margin:0 50px 25px 50px;
   /*position: relative;
@@ -910,9 +915,6 @@ strong{
 /****************  posts pages   ************************/
 /****************************************/
 
-
-
-
 .wrapper {
   display: grid;
   grid-template-columns:  repeat(5, 18%);
@@ -934,7 +936,208 @@ strong{
   margin: 10px 0;
 }
 
-.e{
+.box.e{
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(../images/down.png);}
+  background-image: url(../images/down.png);
+}
+
+.secondary-nav{
+  padding: 40px 30px 0 30px;
+  height: 50px;
+  text-align: center;
+}
+
+.secondary-nav a{
+  padding:10px 35px;
+  color:white;
+  background-color: black;
+  margin:0 10px;
+}
+.secondary-nav a:hover{
+  background-color: #77788A;
+}
+
+.secondary-nav a.active{
+  font-weight: 700;
+  color:black;
+  background-color: #E2E5EE;
+}
+
+.no-posts{
+  /* No posts!: */
+font-size: 30px;
+letter-spacing: 0.5px;
+text-align: center;
+line-height: 400px;
+}
+
+
+
+/*  Weekly view  chart*/
+
+.weekly-view-chart {
+  display: grid;
+  grid-template-columns:  repeat(7, 13.5%);
+  text-align: center;
+  grid-gap: 10px;
+  grid-template-rows: repeat(6, 40px);
+  grid-row-end: 10;
+  grid-row-start: 0;
+
+}
+
+.posts-bars {
+  color: #949EB3;
+  padding: 0px;
+}
+
+.posts-bars.fb{
+  background-image: linear-gradient(40deg, #7C75FF 0%, #00B0FF 100%);
+}
+
+.posts-bars.insta{
+  background-image: linear-gradient(45deg, #EC4F4F 0%, #FE9E73 100%);
+}
+
+/*monday*/
+.posts-bars.label.a{
+  grid-column: 1 ;
+  grid-row: 5 / 6;
+}
+
+.posts-bars.fb.a{
+  grid-column: 1 ;
+  grid-row: 3 / 4;
+}
+.posts-bars.insta.a{
+  grid-column: 1 ;
+  grid-row: 4 / 5;
+}
+
+
+/*tuesday*/
+.posts-bars.label.b{
+  grid-column: 2 ;
+  grid-row: 5 / 6;
+}
+.posts-bars.fb.ba{
+  grid-column: 2 ;
+  grid-row: 1 / 2;
+}
+.posts-bars.fb.b{
+  grid-column: 2 ;
+  grid-row: 2 / 3;
+}
+.posts-bars.insta.ba{
+  grid-column: 2 ;
+  grid-row: 3 / 4;
+}
+.posts-bars.insta.b{
+  grid-column: 2 ;
+  grid-row: 4 / 5;
+}
+
+/*wednesday*/
+.posts-bars.label.c{
+  grid-column: 3 ;
+  grid-row: 5 / 6;
+}
+.posts-bars.insta.c{
+  grid-column: 3 ;
+  grid-row: 4 / 5;
+}
+.posts-bars.fb.c{
+  grid-column: 3 ;
+  grid-row: 3 / 4;
+}
+
+
+/*thursday*/
+.posts-bars.label.d{
+  grid-column: 4 ;
+  grid-row: 5 / 6;
+}
+.posts-bars.insta.d{
+  grid-column: 5 ;
+  grid-row: 4 / 5;
+}
+
+/*friday*/
+.posts-bars.label.e{
+  grid-column: 5 ;
+  grid-row: 5 / 6;
+}
+.posts-bars.insta.e{
+  grid-column: 5 ;
+  grid-row: 4 / 5;
+}
+.posts-bars.fb.e{
+  grid-column: 5 ;
+  grid-row: 4 / 5;
+}
+/*saturday*/
+.posts-bars.label.f{
+  grid-column: 6 ;
+  grid-row: 5 / 6;
+}
+.posts-bars.fb.f{
+  grid-column: 6 ;
+  grid-row: 4 / 5;
+}
+.posts-bars.insta.f{
+  grid-column: 6 ;
+  grid-row: 4 / 5;
+  display: none
+}
+
+/*sunday*/
+.posts-bars.label.g{
+  grid-column: 7 ;
+  grid-row: 5 / 6;
+}
+.posts-bars.insta.g{
+  grid-column: 7 ;
+  grid-row: 4 / 5;
+}
+.posts-bars.fb.g{
+  grid-column: 7 ;
+  grid-row: 3 / 4;
+}
+
+
+
+
+
+/*Calendar view*/
+
+.weekday {
+  color: #a0a5bf;
+  padding: 0px;
+  font-size: 18px;
+  border: 1px solid #1B2029;
+}
+
+.cal {
+    width: 100%;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat(7, 14%);
+    grid-template-rows: repeat(6, 150px)
+}
+
+.weekday .day.cur-day{
+  background-color: #FE7373;
+  color:white;
+}
+
+.weekday .day{
+  width:30px;
+  height:30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.weekday.selected{
+
+}
