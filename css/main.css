@@ -397,8 +397,9 @@ button{
 }
 
 .customize-network{
-  position: relative;
-  right:-430px;
+  position: absolute;
+  /*right:-430px;*/
+  right:2%;
 }
 
 .button:hover{

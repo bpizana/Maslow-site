@@ -12,11 +12,11 @@ $('#new-post li').click(function(){
        $(this).addClass('inactive-network')
    }
 });
-
-$('.sidebar-dropdown li,.sidebar-dropdown li a, .top-nav a').hover(function(){
-   if($(this).hasClass('bright-blue')){
-       $(this).removeClass('bright-blue')
-   } else {
-       $(this).addClass('bright-blue')
-   }
-});
+//
+// $('.sidebar-dropdown li,.sidebar-dropdown li a, .top-nav a').hover(function(){
+//    if($(this).hasClass('bright-blue')){
+//        $(this).removeClass('bright-blue')
+//    } else {
+//        $(this).addClass('bright-blue')
+//    }
+// });
