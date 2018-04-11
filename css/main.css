@@ -62,6 +62,7 @@ h1{
       top:0;
       bottom:0;
     width:200px;
+    min-height:915px;
     overflow-x: hidden;
       transition: 0.5s;
       z-index: 100;
@@ -194,8 +195,8 @@ h1{
 
   #logo {
     box-sizing: border-box;
-    position: fixed;
-    bottom: 50px;
+    position: absolute;
+    bottom: 60px;
     left: 30px;
     width: 145px;
   }
@@ -722,8 +723,8 @@ strong{
 /****************************************/
 
 .chart {
-  height: 10vh;
-  width: 36vw;
+  height: 60px;
+  width: 97%;
 
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -734,8 +735,8 @@ strong{
 }
 
 .chart-labels {
-  height: 10vh;
-  width: 36vw;
+  height: 30px;
+  width: 97%;
 
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -857,7 +858,7 @@ strong{
 
 .chart-views {
   height: 14vh;
-  width: 36vw;
+  width: 97%;
 
   display: grid;
   grid-template-columns: repeat(14, 1fr);
@@ -868,8 +869,8 @@ strong{
 }
 
 .chart-labels {
-  height: 10vh;
-  width: 36vw;
+  height: 30px;
+  width: 97%;
 
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -1361,8 +1362,8 @@ line-height: 400px;
 
 
   .chart, .chart-labels {
-      height: 5vh;
-      width: 31vw;
+      height: 30px;
+      width: 97%;
     }
   .chart-labels {
       font-size: 13px;
