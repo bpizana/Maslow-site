@@ -950,6 +950,15 @@ strong{
 /****************************************/
 /****************  posts pages   ************************/
 /****************************************/
+.key{
+  display: flex;
+  position: absolute;
+  right:30px;
+  bottom: 30px;
+}
+.key p{
+  margin:10px;
+}
 
 .wrapper {
   display: grid;
