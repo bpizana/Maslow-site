@@ -187,10 +187,16 @@ h1{
   }
 
 
-  #logo{
+  img{
+    max-width:100%;
+  }
+
+  #logo {
+    box-sizing: border-box;
     position: fixed;
     bottom: 50px;
-    left:30px;
+    left: 30px;
+    width: 145px;
   }
 
   .sidebar-dropdown{
@@ -225,9 +231,8 @@ h1{
 
 main{
   box-sizing: border-box;
-  position: relative;
-    left:12%;
-  width:88%;
+  position: absolute;
+    left:200px;
 }
 
 .very-top-card{
@@ -482,11 +487,18 @@ textarea::placeholder{
        top: -30px;*/
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-    padding-bottom: 20PX;
+.dropdown{
+      position: absolute;
+      right: 30px;
+      bottom: 30px;
+      display: inline-block;
+    /*padding-bottom: 20PX;*/
 }
+.preview {
+      position: absolute;
+      right: 139px;
+      bottom: 30px;
+    }
 
 .dropdown-content {
   display: none;
@@ -1205,27 +1217,17 @@ line-height: 400px;
   display: inline-flex;
 }
 
+@media screen and (max-width: 1255px) {
 
+  .half {
+     width: 49.5%;
+   }
+
+}
 
 @media screen and (max-width: 1025px) {
 
-  main {
-    left: 19.5%;
-    width: 80.5%;
-    overflow-x: hidden;
-  }
 
-  img{
-    width: 100%;
-  }
-
-  #logo {
-    box-sizing: border-box;
-    position: fixed;
-    bottom: 50px;
-    left: 30px;
-    width: 145px;
-  }
   .customize-network {
     position: relative;
     right: -190px;
