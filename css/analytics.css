@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 h2{
 font-weight: 700;
 font-size: 45px;
@@ -97,5 +100,118 @@ margin-top: 30px;
   .mar-bottom {
     margin-bottom: 25px;
 }
+
+}
+
+
+@media screen and (max-width: 760px) {
+
+  .profile-info {
+    margin: 20px 20px -10px 4px;
+    width: 150px;
+  }
+
+  .half{
+        width: 49.5%;
+  }
+
+  .preview {
+    position: absolute;
+    right: 94px;
+    bottom: 15px;
+  }
+
+  button {
+    font-size: 13px;
+    padding: 10px 15px;
+  }
+
+  .dropdown {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+  }
+  .centered-stats {
+    font-size: 50px;
+  }
+  .horizonal-list li {
+    display: inline-flex;
+    margin: 0 6px;
+  }
+  html, body, div, applet, object, iframe,
+  p, i, center, dl, dt, dd, ol, ul, li,
+  label, legend, table, caption,
+  footer, header, nav, output, section {
+    font-size: 14px;
+  }
+  .centered-stats-small {
+    font-size: 40px;
+    line-height: 62px;
+  }
+  .right-small {
+    height: 95px;
+  }
+  .left-small {
+    height: 190px;
+  }
+  h1{
+    font-size: 25px;
+  }
+  .top-card-top, .top-half-left,.top-half-right,.top-half-left, .top-half-right, .top-card, .top-half {
+    padding: 15px 15px;
+  }
+
+  .chart-label {
+    font-size: 30px;
+  }
+
+}
+
+@media screen and (max-width:414px) {
+
+  .half {
+    width: 100%;
+  }
+  .top-half-left {
+    margin: 10px 10px 0 10px;
+  }
+  .half-left {
+    margin: 0 10px 5px 10px;
+  }
+  .top-half-right {
+    margin: 5px 10px 0 10px;
+  }
+  .overlap {
+    margin-right: 10px;
+  }
+  .left-small {
+    margin: 0 0 5px 10px ;
+  }
+  .half-right {
+    margin: 0 10px 5px 10px;
+  }
+  .top-card-left {
+    margin: 10px 10px 0 10px;
+  }
+  .left, .right {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .top-card-right {
+    margin: 5px 10px 0 10px;
+    overflow-x: scroll;
+  }
+  .three-quarter {
+    width: 100%;
+  }
+
+  .one-fourth {
+    width: 100%;
+  }
+
+
+
+
+
 
 }
